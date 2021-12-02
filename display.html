@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>List</title>
+</head>
+<body>
+<h3>LIST OF AVAILABLE BOOKS</h3>   
+<table border=1>
+<thead>
+<td>ID</td>
+<td>PUBLISHER Name</td>
+<td>BOOK Name</td>
+<td>AUTHOR Name</td>
+<td>AVAILBLE BOOKS</td>
+
+</thead>
+{% for row in rows %}
+<tr>
+<td>{{row["id"]}}</td>
+<td>{{row["pubisher"]}}</td>
+<td>{{row["bookname"]}}</td>
+<td>{{row["author"]}}</td>
+<td>{{row["total"]}}</td>
+
+</tr>
+{% endfor %}   
+</table>
+<br><br>
+<a href="/">Go back to home page</a>
+</body>
+</html> 
+ 
